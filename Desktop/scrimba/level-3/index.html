@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Basketball Scoreboard</h1>
+    <div class="container">
+        <div class="home">
+            <h3>HOME</h3>
+            <p id="sum-el"></p>
+            <div class="nums">
+                <button id="btn-1" onclick="btnOne()">+3</button>
+                <button id="btn-2" onclick="btnTwo()">+2</button>
+                <button id="btn-3" onclick="btnThree()">+1</button>
+            </div>
+            <div class="wrap">
+            <button id="save" onclick="totalSum()">SAVE</button>
+        </div>
+            <h4 id="result-el">SCORE:</h4>
+        </div>
+
+        <div class="guest">
+            <h3>GUEST</h3>
+            <p id="score-el"></p>
+            <div class="nums">
+                <button id="btn-1" onclick="firstBtn()">+3</button>
+                <button id="btn-2" onclick="secondBtn()">+2</button>
+                <button id="btn-3" onclick="thirdBtn()">+1</button>
+            </div>
+            <div class="wrap">
+            <button id="save" onclick="totalScore()">SAVE</button>
+        </div>
+            <h4 id="save-el">SCORE:</h4>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;;
+}
+
+body{
+    background: darkgrey;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: orange;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+}
+
+.score-container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    font-size: 3rem;
+
+}
+
+.playerOneScore, .playerTwoScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+.scoreboard {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 3px solid gold;
+    font-size: 3rem;
+    background-color: yellow;
+}
+
+.active {
+    box-shadow: -2px 4px 10px 3px rgba(0,0,0,0.75);
+}
+
+button {
+    /* display: block; */
+    outline: none;
+    padding: 10px 15px;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: brown;
+}
+
+.resetbtn {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 660px) {
+    .score-container {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 40px;
+        padding: 50px;
+        font-size: 2rem;
+    
+    }
+
+    .score {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .score-container {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 40px;
+        padding: 50px;
+        font-size: 1.5rem;
+    
+    }
+
+    .score {
+        font-size: 2rem;
+    }
+}
+
+span {
+    /* display: block; */
+}

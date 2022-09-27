@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90vw;
+    height: 90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    background-color: darkgray;
+}
+
+.main-container {
+    color: #fff;
+    width: 800px;
+    height: 600px;
+    margin-top: 40px;
+    margin-left: 200px;
+    background-color: #4B4453;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: lightgray;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home, .guest {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+#save {
+    padding: 5px 15px;
+    border: none;
+    background-color: aqua;
+}
+
+.nums {
+    margin-left: 20px;
+}
+
+#btn-1, #btn-2, #btn-3 {
+    padding: 5px;
+    background-color: #00C2A8;
+    color: #fff;
+    border: 1px solid #008B74;
+}
+
+p {
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.wrap {
+    margin-left: 37px;
+    margin-bottom: 100px;
+}
+
+@media(max-width: 1123px) {
+    .main-container {
+        color: #fff;
+        width: 650px;
+        height: 600px;
+        margin-top: 40px;
+        margin-left: 50px;
+        background-color: #4B4453;
+    }
+}
+
+@media(max-width: 768px) {
+    .main-container {
+        color: #fff;
+        width: 650px;
+        height: 600px;
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-right: 30px;
+        background-color: #4B4453;
+    }
+}

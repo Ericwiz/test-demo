@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div class="metric__container">
+      <div class="main__area">
+        <h1>Units Converter</h1>
+        <form id="form">
+          <input type="number" id="number" min="0" />
+        </form>
+        <button class="convert" id="convert">Convert</button>
+      </div>
+      <div class="unit_converted">
+        <div class="card">
+          <h2>Length (Meter/Feet)</h2>
+          <p id="feet"></p>
+          <p id="meter"></p>
+        </div>
+
+        <div class="card">
+          <h2>Volume (Leters/Gallons)</h2>
+          <p id="liter"></p>
+          <p id="gallon"></p>
+        </div>
+
+        <div class="card">
+          <h2>Mass (Kilograms/Pounds)</h2>
+          <p id="pound"></p>
+          <p id="kilo"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

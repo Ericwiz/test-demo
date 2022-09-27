@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MODAL BOX</title>
+  </head>
+  <body>
+    <!-- BUILDING A MODAL -->
+    <!-- USER should click a button to open the modal /JS-->
+    <!-- the background should be hidden when ever the modal is clicked/CSS -->
+
+    <!-- 1) we need a div with an ID of 'overlay' -->
+    <div id="overlay">
+      <!-- 2) inside the div of 'overlay', we need a div with an ID of 'modal' -->
+      <div id="modal">
+        <h2>Contact details</h2>
+        <p>Homer Simpson, 742 Evergreen Terrace</p>
+        <button id="close-modal">Close!</button>
+      </div>
+    </div>
+    <!-- 4 -->
+    <h1>Click to reveal Homer's contact details!</h1>
+    <!-- add a h1 tag with the text '👇 Click to reveal Homer's contact details! 👇' -->
+    <button id="open-modal">Contact Me</button>
+    <!-- add a button with the text 'Contact Me 📨' and with an ID of 'open-modal' -->
+    <script src="main.js"></script>
+  </body>
+</html>

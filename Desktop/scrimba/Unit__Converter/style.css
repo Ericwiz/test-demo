@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.metric__container {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 19, 27);
+    color: white;
+}
+
+.main__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 30px; */
+    color: white;
+    background: rgb(83, 72, 238);
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 30px;
+}
+.main__area h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.main__area input {
+    font-size: 3rem;
+    width: 130px;
+    color: white;
+    background-color: rgb(83, 72, 238);
+    outline: none;
+    border: 2px solid lightgray;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: white;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(18, 18, 24, 0.75);
+    cursor: pointer;
+}
+
+.unit_converted {
+    width: 100%;
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: rgb(19, 19, 100, 0.8);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+}
+.card p {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+@media(max-width: 900px) {
+    .main__area h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 622px) {
+    .main__area h1 {
+        font-weight: 700;
+        font-size: 2.1rem;
+    }
+}
+
+@media(max-width: 484px) {
+
+    .card p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 442px) {
+    .main__area h1 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+
+
+@media(max-width: 390px) {
+    .main__area h1 {
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+
+    .card p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

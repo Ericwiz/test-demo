@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#open-modal, #close-modal {
+    background-color: royalblue;
+    border: none;
+    font-size: 1.1rem;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal {
+    padding: 200px;
+    background: orange;
+    max-width: 600px;
+    height: 200px;
+    margin: 0 auto;
+}

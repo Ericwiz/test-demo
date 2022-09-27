@@ -1,0 +1,36 @@
+.carousel {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+.carousel-item, .carousel-item-hidden {
+    display: none;
+}
+
+.carousel-item-visible {
+    display: block;
+}
+.carousel-item img{
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border: 10px solid lightgray;
+}
+
+#carousel-button-prev {
+    font-size: 30px;
+    padding: 0 10px;
+    background: lightgray;
+    position: absolute;
+    left: 30px;
+    top: 200px
+}
+
+#carousel-button-next {
+    font-size: 30px;
+    padding: 0 10px;
+    background: lightgray;
+    position: absolute;
+    top: 200px;
+    left: 550px; 
+}

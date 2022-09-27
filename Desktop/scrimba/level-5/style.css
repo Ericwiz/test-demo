@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
+#apple-shelf {
+    width: 500px;
+    height: 70px;
+    background-color:blueviolet;
+    margin-top: 15px;
+    
+}
+#orange-shelf {
+    width: 500px;
+    height: 70px;
+    background-color:aquamarine;
+    margin-top: 15px;
+    
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    
+}

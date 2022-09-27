@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My own dice game</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="player-turn" id="message">Player 1 Turn</h1>
+        <div class="score-container">
+            <div class="playerOneScore">
+                <h2>Score: 
+                    <span class="score" id="playerOneScore">0</span>
+                </h2>
+                <span class="scoreboard active" id="playerOneScoreBoard">-</span>
+            </div>
+            <div class="playerTwoScore">
+                <h2>Score:
+                    <span class="score" id="playerTwoScore">0</span>
+                </h2>
+                <span class="scoreboard" id="playerTwoScoreBoard">-</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="rolldicebtn" id="rollDice">🎲</button>
+            <button class="resetbtn" id="reset">🔁</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
