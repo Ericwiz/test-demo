@@ -7,7 +7,6 @@ const modalText = document.getElementById('modal-text');
 
 function setTime() {
     modal.style.display = 'inline';
-    uploadText.textContent = 'Making the sale...'
 }
 
 function closeModal() {
@@ -17,6 +16,11 @@ function closeModal() {
 setTimeout(setTime, 1500)
 
 modalCloseBtn.addEventListener('click', closeModal)
+
+document.getElementById('decline-btn').addEventListener('mouseenter', () => {
+    document.getElementById('modal-choice-btns').classList.toggle('reverse')
+    console.log('wetin')
+})
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -31,10 +35,12 @@ form.addEventListener('submit', e => {
 `
     
     setTimeout(() => document.getElementById('uploadText').textContent = 'Making the sale...', 1500);
+    const formData = new FormData(form)
+    const name = formData.get('name')
 
     setTimeout(function () {
         document.getElementById('modal-inner').innerHTML = `
-        <h2>Thanks you sucker! </h2>
+        <h2>Thanks <span class="modal-display-name">${name}</span>, you sucker! </h2>
         <p>We just sold the rights to your eternal soul 🤣🤣🤣</p>
         <div class="idiot-gif">
             <img src="image/pirate.gif">
@@ -42,5 +48,7 @@ form.addEventListener('submit', e => {
         `
 
         document.getElementById('modal').style.height = '480px'
+        document.getElementById('modal-close-btn').disabled = false
     }, 3000)
+
 })

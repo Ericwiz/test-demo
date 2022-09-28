@@ -121,6 +121,13 @@ main{
     padding: 8px 16px;
     display: flex;
     justify-content: center;
+     transition: .5s ease;
+
+}
+
+.reverse {
+    flex-direction: row-reverse;
+   
 }
 
 .modal-btn{
